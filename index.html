@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Creative Design</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    
+<body onload="init()">
+    <div id="main" class="wrapper">
+        <!-- create a div for each element needed.-->
+        <div id="subject-woman" class="creative-divs">
+            <img src="./img/woman-subject-mono.png" alt="woman">
+        </div>
+        <div id="headline" class="creative-divs">
+            <img src="./img/headline.png" alt="headline">
+        </div>
+        <div id="sub-headline" class="creative-divs">
+            <img src="./img/Enjoy-premium.png" alt="headline">
+        </div>
+       
+        <div id="price" class="creative-divs">
+            <img src="./img/129-per-month.png" alt="price">
+        </div>
+
+        <div id="cta" class="creative-divs">
+            <img src="./img/cta.png" alt="cta button">
+        </div>
+        <div id="spotify-logo" class="creative-divs">
+            <img src="./img/spotify-logo.png" alt="spotify">
+        </div>
+        <div id="repeat-btn" class="creative-divs">
+            <img src="./img/replay.png" alt="repeat">
+        </div>
+        
+    
+    
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+        function fadeOutEffect() {
+
+        var fadeTarget = document.getElementById("subject-woman");
+        var fadeEffect = setInterval(function () {
+            if (!fadeTarget.style.opacity) {
+                fadeTarget.style.opacity = 1;
+            }
+            if (fadeTarget.style.opacity > 0) {
+                fadeTarget.style.opacity -= 0.1;
+            } else {
+                clearInterval(fadeEffect);
+            }
+            }, 300);
+        }
+
+        function fadeInWoman()
+        {
+            var fadeTarget = document.getElementById("subject-woman");
+            
+        }
+
+        document.getElementById("target").addEventListener('click', fadeOutEffect);
+    </script>
+</body>
+
+</html>
